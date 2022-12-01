@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+search_exclude: true
+---
 # Setup ruby on mac OS and serve this site locally with jekyll
 
 ## Step 1: Install and use the correct version of ruby
@@ -77,4 +81,8 @@ Configuration file: /path/to/competency-ecosystem-docs/_config.yml
 ```
 
 *Congratulations!!!*, you may now write documentation.
+
+# Documentation:
+Just the docs: https://just-the-docs.github.io/just-the-docs/
+Jekyll: https://jekyllrb.com/
 
