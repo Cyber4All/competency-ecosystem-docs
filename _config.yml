@@ -1,2 +1,3 @@
 title: "Competency API Developer Docs"
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
+remote-theme: just-the-docs/just-the-docs
