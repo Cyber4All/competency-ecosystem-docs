@@ -47,6 +47,10 @@ Gem is ruby's package manager, like Pip is to Python, or npm is to Node.
 
 #### Step 3: Run it
 
+First, go to the _config.yml and uncomment `theme: just-the-docs` or you won't have a theme in the local server.
+
+##### NOTE: comment it out before you push to releases or the github action will fail
+
 ```bash
 cd /path/to/competency-ecosystem-docs
 bundle exec jekyll build
