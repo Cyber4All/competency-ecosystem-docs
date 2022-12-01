@@ -1,3 +1,4 @@
 title: "Competency API Developer Docs"
-theme: just-the-docs
+# The order of these themes are important for deploying
 remote-theme: just-the-docs/just-the-docs
+theme: just-the-docs
