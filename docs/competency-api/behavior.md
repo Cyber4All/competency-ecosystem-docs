@@ -51,7 +51,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
 ### Response
 
 | Name | Description |
-|----|----|
+|:----:|----|
 | 200 | Behavior updated successfully |
 | 400 | Competency is deprecated, rejected, or published and cannot be updated. Or body is incorrectly formatted. |
 | 401 | Not Authenticated  |
