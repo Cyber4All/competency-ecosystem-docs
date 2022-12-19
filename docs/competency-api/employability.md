@@ -25,7 +25,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/emplo
 ### Request
 
 | Name | Required | Type | Description |
-|----|:-----:|:----:|-----|
+|:----:|:-----:|:----:|-----|
 | details | true | string | Any performance factors which are important to the competency and not otherwise specified |
 | userId | true | Object Id: string | The userId matching the Bearer token |
 
