@@ -26,7 +26,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
 ### Request
 
 | Name | Required | Type | Description |
-|----|:-----:|:----:|-----|
+|:----:|:-----:|:----:|-----|
 | task | true | string | The task to be carried out by the student |
 | details | false | string | Any details related to how the task should be completed |
 | work_role | false | string | Work role(s) in which this task could be performed |
