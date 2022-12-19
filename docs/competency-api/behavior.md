@@ -9,6 +9,8 @@ parent: Competency API
 ## Update Behavior
 
 ### Description 
+
+#### patch:
 ```http
 https://api.competency-constructor.clark.center/competencies/:competencyId/behavior
 ```
