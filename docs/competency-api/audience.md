@@ -8,24 +8,24 @@ parent: Competency API
 ## Update Audience
 
 ### Definition
-```
-http://api.competency-constructor.clark.center/competencies/:competencyId/audience
+```HTTP
+https://api.competency-constructor.clark.center/competencies/:competencyId/audience
 ```
 
 ## Headers
 ```JSON
 {
-    Bearer: $BEARER-TOKEN
+    Bearer: Bearer.Example.bearer.token
 }
 ```
 
 ### Body Parameters
 
-| Name | Description |
-| ----------- | ----------- |
-| type | The type of audience for the competency |
-| details | Any details necessary about the audience of the competency |
-| userId | The ObjectId of the user |
+| Name | Description | Type | Example |
+| ----------- | ----------- | ----------- | ----------- |
+| type | The type of audience for the competency | string | The undergraduate student |
+| details | Any details necessary about the audience of the competency | string | who has completed basic networking |
+| userId | The ObjectId of the user | ObjectId as a string | 6112745b84804cf5833aa94c |
 
 ### Responses
 
@@ -37,4 +37,13 @@ http://api.competency-constructor.clark.center/competencies/:competencyId/audien
 | 403 | User does not have permissions to update fields of the competency |
 | 404 | Competency not found |
 
+### Example
+
+```CURL
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Bearer: Bearer.Example.bearer.token" \
+  -d '{ "type": "The undergraduate student", "details": "who has completed basic networking", "userId": ObjectId() }' \
+  -L "https://api.competency-constructor.clark.center/competencies/:competencyId/audience"
+```
 
