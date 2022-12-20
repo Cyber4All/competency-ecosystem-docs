@@ -13,7 +13,7 @@ http://api.competency-constructor.clark.center/competencies/:competencyId/audien
 ```
 
 ## Headers
-```
+```JSON
 {
     Bearer: $BEARER-TOKEN
 }
