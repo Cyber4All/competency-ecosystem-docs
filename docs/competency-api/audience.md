@@ -8,14 +8,14 @@ parent: Competency API
 ## Update Audience
 
 ### Definition
-```HTTP
+```http
 https://api.competency-constructor.clark.center/competencies/:competencyId/audience
 ```
 
 ## Headers
-```JSON
+```json
 {
-    Bearer: Bearer.Example.bearer.token
+    Authorization: Bearer Example.bearer.token
 }
 ```
 
@@ -25,7 +25,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/audie
 | ----------- | ----------- | ----------- | ----------- |
 | type | The type of audience for the competency | string | The undergraduate student |
 | details | Any details necessary about the audience of the competency | string | who has completed basic networking |
-| userId | The ObjectId of the user | ObjectId as a string | 6112745b84804cf5833aa94c |
 
 ### Responses
 
@@ -39,10 +38,10 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/audie
 
 ### Example
 
-```CURL
+```
 curl -X PATCH \
   -H "Content-Type: application/json" \
-  -H "Bearer: Bearer.Example.bearer.token" \
+  -H "Authorization: Bearer Example.bearer.token" \
   -d '{ "type": "The undergraduate student", "details": "who has completed basic networking", "userId": ObjectId() }' \
   -L "https://api.competency-constructor.clark.center/competencies/:competencyId/audience"
 ```
