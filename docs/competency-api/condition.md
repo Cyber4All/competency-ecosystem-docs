@@ -14,10 +14,10 @@ has_toc: false
 https://api.competency-constructor.clark.center/competencies/:competencyId/condition
 ```
 
-## Headers
+### Headers
 ```JSON
 {
-    Bearer: Bearer.Example.bearer.token
+    Authorization: Bearer Example.bearer.token
 }
 ```
 
@@ -46,6 +46,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
 ```CURL
 curl -X PATCH \
   -H "Content-Type: application/json" \
-  -H "Bearer": Bearer.Example.bearer.token \
+  -H "Authorization": Bearer Example.bearer.token \
   -d '{ "work_role": "6112745b84804cf5833aa94c", "tech": [ "SEED Labs", "Hack the Box"], "limitations": without the use of the internet, "competencyId" : "6112745b84804cf5833aa94c", "userId" : "6112745b84804cf5833aa94c" }' \
   -L "https://api.competency-constructor.clark.center/competencies/:competencyId/condition"
+  ```
