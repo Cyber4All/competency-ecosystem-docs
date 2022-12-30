@@ -10,12 +10,12 @@ has_toc: false
 ## Update Condition
 
 ### Definition
-```HTTP
+```http
 https://api.competency-constructor.clark.center/competencies/:competencyId/condition
 ```
 
 ### Headers
-```JSON
+```json
 {
     Authorization: Bearer Example.bearer.token
 }
@@ -43,7 +43,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
 
 ### Example
 
-```CURL
+```
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization": Bearer Example.bearer.token \
