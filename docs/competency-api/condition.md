@@ -29,7 +29,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
 | tech | Tech that is used for the competency | string [] | [ "SEED Labs", "Hack the Box"] |
 | limitations | Any limitations for successful completion of the competency | string | without the use of the internet |
 | competencyId | The ObjectId of the competency the condition belonged to | ObjectId as a string | 6112745b84804cf5833aa94c |
-| userId | The ObjectId of the user | ObjectId as a string | 6112745b84804cf5833aa94c |
 
 ### Responses
 
