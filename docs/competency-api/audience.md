@@ -15,7 +15,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/audie
 ## Headers
 ```json
 {
-    Authorization: Bearer Example.bearer.token
+    "Authorization": "Bearer Example.bearer.token"
 }
 ```
 
