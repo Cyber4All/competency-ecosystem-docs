@@ -42,7 +42,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/audie
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer Example.bearer.token" \
-  -d '{ "type": "The undergraduate student", "details": "who has completed basic networking", "userId": ObjectId() }' \
+  -d '{ "type": "The undergraduate student", "details": "who has completed basic networking" }' \
   -L "https://api.competency-constructor.clark.center/competencies/:competencyId/audience"
 ```
 
