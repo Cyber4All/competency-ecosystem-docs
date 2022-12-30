@@ -17,7 +17,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
 ### Headers
 ```json
 {
-    Authorization: Bearer Example.bearer.token
+    "Authorization": "Bearer Example.bearer.token"
 }
 ```
 
