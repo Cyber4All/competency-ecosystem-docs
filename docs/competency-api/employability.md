@@ -49,7 +49,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/emplo
 ```bash
 curl -X PATCH \
   -H "Content-Type: application/json" \
-  -H "Authorization": Bearer Example.bearer.token \
+  -H "Authorization": "Bearer Example.bearer.token" \
   -d '{ details: "The student works well on a team, to achieve an exemplary end result.", userId: "45b84804cf5833aa94c" }' \
   -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/behavior"
 ```
