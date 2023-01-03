@@ -46,7 +46,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/degre
         correct: "Of the dummy network requests given, student must correctly 
         identify the port, protocol and likely purpose of the request.",
         time: "5 minutes",
-        userId: "6112745b84804cf5833aa94c"
     }
 }
 ```
