@@ -19,7 +19,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
 
 ```json
 {
-    Bearer: "Bearer Example.bearer.token"
+    Authorization: "Bearer Example.bearer.token"
 }
 ```
 
@@ -29,22 +29,33 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
 |:----:|:-----:|:----:|-----|
 | task | true | string | The task to be carried out by the student |
 | details | false | string | Any details related to how the task should be completed |
-| work_role | false | string | Work role(s) in which this task could be performed |
+| work_role | false | Object Id: string | Work role in which this task could be performed (limited to one) |
 | userId | true | Object Id: string | The userId matching the Bearer token |
 
 <details closed markdown="block">
   <summary>
     Example
   </summary>
+
+### Example http request body
 ```json
 {
     body: {
         task: "Google it",
         details: "student must figure it out themselves",
-        work_role: "Software Engineer",
-        userId: "aposjdfnpouapuofaou"
+        work_role: "6112745b84804cf5833aa94c",
+        userId: "6112745b84804cf5833aa94c"
     }
 }
+```
+
+### Example Curl request
+```bash
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Authorization": Bearer Example.bearer.token \
+  -d '{ task: "Google it", details: "student must figure it out themselves", work_role: "6112745b84804cf5833aa94c", userId: "6112745b84804cf5833aa94c" }' \
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/behavior"
 ```
 </details>
 
