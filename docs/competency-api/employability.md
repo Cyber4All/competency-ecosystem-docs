@@ -9,7 +9,7 @@ parent: Competency API
 ## Update Employability
 
 ### Description
-This route is used to update the employability section of a competency with details. Both details and userId are required.
+This route is used to update the employability section of a competency with details. Both details are required.
 
 #### patch:
 ```http
@@ -28,7 +28,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/emplo
 | Name | Required | Type | Description |
 |:----:|:-----:|:----:|-----|
 | details | true | string | Any performance factors which are important to the competency and not otherwise specified |
-| userId | true | Object Id: string | The userId matching the Bearer token |
 
 <details closed markdown="block">
   <summary>
@@ -40,7 +39,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/emplo
 {
     body: {
         details: "The student works well on a team, to achieve an exemplary end result.",
-        userId: "45b84804cf5833aa94c"
     }
 }
 ```
@@ -50,7 +48,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/emplo
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization": "Bearer Example.bearer.token" \
-  -d '{ details: "The student works well on a team, to achieve an exemplary end result.", userId: "45b84804cf5833aa94c" }' \
+  -d '{ details: "The student works well on a team, to achieve an exemplary end result." }' \
   -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/employability"
 ```
 
