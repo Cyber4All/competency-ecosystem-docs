@@ -64,7 +64,7 @@ curl -X PATCH \
         time: "5 minutes",
         userId: "6112745b84804cf5833aa94c"
     }' \
-  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/behavior"
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/degree"
 ```
 </details>
 
