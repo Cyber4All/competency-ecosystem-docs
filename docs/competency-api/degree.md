@@ -9,7 +9,7 @@ parent: Competency API
 ## Update Degree
 
 ### Description
-This route is used to update the Degree section of a competency with information on what constitutes complete, correct, and any time constraints. Only userId is required.
+This route is used to update the Degree section of a competency with information on what constitutes complete, correct, and any time constraints.
 
 #### patch: 
 ```http
