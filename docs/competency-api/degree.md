@@ -9,10 +9,18 @@ parent: Competency API
 ## Update Degree
 
 ### Description
+This route is used to update the Degree section of a competency with information on what constitutes complete, correct, and any time constraints. Only userId is required.
 
 #### patch: 
 ```http
 https://api.competency-constructor.clark.center/competencies/:competencyId/degree
+```
+
+### Headers
+```json
+{
+    Authorization: "Bearer Example.bearer.token"
+}
 ```
 
 ### Request
@@ -28,6 +36,8 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/degre
   <summary>
     Example
   </summary>
+
+### Example Http request body
 ```json
 {
     body: {
@@ -36,9 +46,25 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/degre
         correct: "Of the dummy network requests given, student must correctly 
         identify the port, protocol and likely purpose of the request.",
         time: "5 minutes",
-        userId: "aposjdfnpouapuofaou"
+        userId: "6112745b84804cf5833aa94c"
     }
 }
+```
+
+### Example Curl request
+```bash
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Authorization": "Bearer Example.bearer.token" \
+  -d '{
+        complete: "Given 5 dummy network requests from a tool like wireshark
+        the student should be able to correcly identify and categorize 4.",
+        correct: "Of the dummy network requests given, student must correctly 
+        identify the port, protocol and likely purpose of the request.",
+        time: "5 minutes",
+        userId: "6112745b84804cf5833aa94c"
+    }' \
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/behavior"
 ```
 </details>
 
