@@ -10,6 +10,8 @@ parent: Competency API
 
 ### Description 
 
+This route is used to update the behavior section of a competency with a task, details, and a work role. Only the task and userId which matches the bearer token is required.
+
 #### patch:
 ```http
 https://api.competency-constructor.clark.center/competencies/:competencyId/behavior
@@ -37,7 +39,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
     Example
   </summary>
 
-### Example http request body
+### Example Http request body
 ```json
 {
     body: {
