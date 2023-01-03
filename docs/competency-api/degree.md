@@ -30,7 +30,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/degre
 | complete | false | string | What it means for the competency to be completed |
 | correct | false | string | What it means for this competency to be adequately correct |
 | time | false | string | How much time is allowed for the competency to be completed |
-| userId | true | Object Id: string | The userId matching the Bearer token |
 
 <details closed markdown="block">
   <summary>
