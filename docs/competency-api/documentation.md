@@ -78,22 +78,10 @@ curl -X PATCH \
 ## Delete:
 
 ### Description
-Delete documentation works differently than most of the other routes. Instead of sending a list of documentation Id's in the request body, you must send them as a list of query parameters
+Delete documentation works differently than most of the other routes. Instead of sending a list of documentation Id's in the request body, you must send them as a list of query parameters.
 
-#### delete all:
-```http
-https://api.competency-constructor.clark.center/competencies/:competencyId/documentation
-```
-
-#### delete one:
-```http
-https://api.competency-constructor.clark.center/competencies/:competencyId/documentation?ids=:documentationId
-```
-
-#### delete multiple:
-```http
-https://api.competency-constructor.clark.center/competencies/:competencyId/documentation?ids=:documentationId,:documentationId,:documentationId
-```
+{: .warning }
+>Sending no query parameters will delete all documentation associated with this competency
 
 ### Query Params
 
@@ -102,8 +90,23 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/docum
 | ids| false | Object Id: string | Comma separated list of documentation object ids |
 
 
-{: .warning }
->Sending no query params will delete all documentation associated with this competency
+### Delete All
+#### delete
+```http
+https://api.competency-constructor.clark.center/competencies/:competencyId/documentation
+```
+
+### Delete One
+#### delete
+```http
+https://api.competency-constructor.clark.center/competencies/:competencyId/documentation?ids=:documentationId
+```
+
+### Delete Multiple
+#### delete
+```http
+https://api.competency-constructor.clark.center/competencies/:competencyId/documentation?ids=:documentationId,:documentationId,:documentationId
+```
 
 ### Response
 
