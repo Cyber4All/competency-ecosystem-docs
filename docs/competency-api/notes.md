@@ -38,7 +38,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/notes
 ```json
 {
     body: {
-        notes: "This competency is meant for students with a Cyber Security track only."
+        details: "This competency is meant for students with a Cyber Security track only."
     }
 }
 ```
