@@ -49,7 +49,7 @@ curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization": "Bearer Example.bearer.token" \
   -d '{
-        notes: "This competency is meant for students with a Cyber Security track only."
+        details: "This competency is meant for students with a Cyber Security track only."
     }' \
   -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/notes"
 ```
