@@ -27,7 +27,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/notes
 
 | Name | Required | Type | Description |
 |:----:|:-----:|:----:|-----|
-| notes | false | string | Any notes related to the competency |
+| details | true | string | Any notes related to the competency |
 
 <details closed markdown="block">
   <summary>
