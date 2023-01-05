@@ -51,7 +51,7 @@ curl -X PATCH \
   -d '{
         notes: "This competency is meant for students with a Cyber Security track only."
     }' \
-  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/behavior"
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/notes"
 ```
 </details>
 
