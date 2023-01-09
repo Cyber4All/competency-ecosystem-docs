@@ -68,8 +68,10 @@ curl -X PATCH \
 
 | Name | Description |
 |:----:|----|
-| 201(create) 204(update) | Success |
-| 400 | Competency is deprecated, submitted, or published and cannot be updated. Or body is incorrectly formatted. |
+| 201 | Successful create |
+| 204 | Successful update |
+| 400 | Competency is deprecated, rejected, or published and cannot be updated. |
+| 400 | Body is incorrectly formatted. |
 | 401 | Not Authenticated  |
 | 403 | User does not have permissions to update fields of the competency |
 | 404 | Competency not found |
