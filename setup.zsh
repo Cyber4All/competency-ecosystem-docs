@@ -1,5 +1,4 @@
 #!/bin/zsh
-echo "hello world"
 brew install chruby ruby-install xz
 xcode-select --install
 ruby-install ruby-3.1.3
