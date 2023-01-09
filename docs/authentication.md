@@ -16,7 +16,7 @@ Authentication and Authorization are done with two different methods:
 2. API Keys
 
 ## Bearer Tokens
-Bearer tokens are Json Web Tokens (JWTs) that are generated when you [login]() or [register](). Here is an example of what a JWT look like: 
+Bearer tokens are Json Web Tokens (JWTs) that are generated when you [login](#login) or [register](#register). Here is an example of what a JWT look like: 
 ```
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
@@ -29,8 +29,33 @@ JWTs are valid for 24 hours, after this time, a new one will need to be generate
 
 
 ## API Keys
-TODO
+API Keys are currently only available by contacting [info@secured.team](mailto:info@secured.team).
 
+API Keys are SecurEd's way to make the Competency Constructor API accessible to all without the headache of having to refresh a Bearer token every 24 hours, which is not ideal when attempting to build out an application.
+
+API Keys are made up of two parts: a prefix and hmac. The format of the key is as followed: `prefix.hmac`
+
+API Keys are identifiable by prefix. API Keys are salted and hashed when storied in our database. Which means if you lose your key, ***we cannot recover it***
+
+{: .warning}
+> **API KEYS ARE NOT RECOVERABLE, IF LOST AN API KEY CANNOT BE RECOVERED. IT WILL HAVE TO BE DELETED AND A NEW ONE GENERATED**
+
+All users have a list of actions that they can perform on our API. The API Key will have a subset of **your** actions. This mean that if permissions A-Z exists, and **your account** has permissions A-D, then your API Key **can only** have permissions A-D.
+
+### API Keys Best Practices
+1. It is best to store your API Key in a secure location
+2. **Never share your API Key with anyone**
+3. If you suspect your API Key has been comprised, contact [info@secured.team](mailto:info@secured.team) **immediately**
+4. Never store your API Keys in your code
+
+### Using Your API Keys
+When an API Key is issued to you, you can use in all of your requests by appending the following header: `cc-token` instead of the `Authorization` header
+
+Example:
+```sh
+curl -L -X POST 'https://api.competency-constructor.clark.center/competencies' \
+-H 'cc-token: prefix.hmac'
+```
 ## Routes
 
 ### Login
