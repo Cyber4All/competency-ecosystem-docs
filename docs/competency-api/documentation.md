@@ -135,4 +135,4 @@ curl -X DELETE \
 | 400 | Body is incorrectly formatted. |
 | 401 | Not Authenticated  |
 | 403 | User does not have permissions to update fields of the competency |
-| 404 | Competency or Documentation not found |
+| 404 | Competency, Condition, or Documentation not found |
