@@ -110,6 +110,22 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/docum
 https://api.competency-constructor.clark.center/competencies/:competencyId/documentation?ids=:documentationId,:documentationId,:documentationId
 ```
 
+<details closed markdown="block">
+  <summary>
+    Example
+  </summary>
+
+### Example Curl request
+
+```bash
+curl -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Authorization": "Bearer Example.bearer.token" \
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/documentation?ids=6112745b84804cf5833aa94c,6112745b84804cf5833aa94c"
+```
+
+</details>
+
 ### Response
 
 | Name | Description |
