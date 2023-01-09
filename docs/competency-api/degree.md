@@ -70,7 +70,7 @@ curl -X PATCH \
 | Name | Description |
 |:----:|----|
 | 200 | Degree updated successfully |
-| 400 | Competency is deprecated, rejected, or published and cannot be updated.
+| 400 | Competency is deprecated, rejected, or published and cannot be updated. |
 | 400 | Body is incorrectly formatted. |
 | 401 | Not Authenticated  |
 | 403 | User does not have permissions to update fields of the competency |
