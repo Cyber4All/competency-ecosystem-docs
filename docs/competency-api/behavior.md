@@ -10,7 +10,7 @@ parent: Competency API
 
 ### Description 
 
-This route is used to update the behavior section of a competency with a task, details, and a work role. Only the task and userId which matches the bearer token is required.
+This route is used to update the behavior section of a competency with a task, details, and a work role. Only the task is required.
 
 #### patch:
 ```http
@@ -32,7 +32,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
 | task | true | string | The task to be carried out by the student |
 | details | false | string | Any details related to how the task should be completed |
 | work_role | false | Object Id: string | Work role in which this task could be performed (limited to one) |
-| userId | true | Object Id: string | The userId matching the Bearer token |
 
 <details closed markdown="block">
   <summary>
@@ -46,7 +45,6 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
         task: "Google it",
         details: "student must figure it out themselves",
         work_role: "6112745b84804cf5833aa94c",
-        userId: "6112745b84804cf5833aa94c"
     }
 }
 ```
@@ -56,7 +54,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/behav
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization": Bearer Example.bearer.token \
-  -d '{ task: "Google it", details: "student must figure it out themselves", work_role: "6112745b84804cf5833aa94c", userId: "6112745b84804cf5833aa94c" }' \
+  -d '{ task: "Google it", details: "student must figure it out themselves", work_role: "6112745b84804cf5833aa94c" }' \
   -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/behavior"
 ```
 </details>
