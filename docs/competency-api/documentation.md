@@ -69,7 +69,7 @@ curl -X PATCH \
 | Name | Description |
 |:----:|----|
 | 201(create) 204(update) | Success |
-| 400 | Competency is deprecated, rejected, or published and cannot be updated. Or body is incorrectly formatted. |
+| 400 | Competency is deprecated, submitted, or published and cannot be updated. Or body is incorrectly formatted. |
 | 401 | Not Authenticated  |
 | 403 | User does not have permissions to update fields of the competency |
 | 404 | Competency not found |
@@ -113,7 +113,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/docum
 | Name | Description |
 |:----:|----|
 | 201 | Documentation Successfully deleted |
-| 400 | Competency is deprecated, rejected, or published and cannot be updated. Or body is incorrectly formatted. |
+| 400 | Competency is deprecated, submitted, or published and cannot be updated. Or body is incorrectly formatted. |
 | 401 | Not Authenticated  |
 | 403 | User does not have permissions to update fields of the competency |
 | 404 | Competency or Documentation not found |
