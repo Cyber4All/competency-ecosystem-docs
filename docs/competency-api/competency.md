@@ -23,6 +23,20 @@ https://api.competency-constructor.clark.center/competencies
 }
 ```
 
+<details closed markdown="block">
+  <summary>
+    Example
+  </summary>
+
+  ### Example Curl request
+```bash
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization": "Bearer Example.bearer.token" \
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/competency"
+```
+</details>
+
 ### Response
 
 | Name | Description |
@@ -45,12 +59,26 @@ This route is used to delete a competency.
 https://api.competency-constructor.clark.center/competencies/:competencyId
 ```
 
-### Headers
+### Header
 ```json
 {
     Authorization: "Bearer Example.bearer.token"
 }
 ```
+
+<details closed markdown="block">
+  <summary>
+    Example
+  </summary>
+
+  ### Example Curl request
+```bash
+curl -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Authorization": "Bearer Example.bearer.token" \
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/competency"
+```
+</details>
 
 ### Response
 
