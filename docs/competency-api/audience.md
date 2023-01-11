@@ -20,6 +20,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/actor
 ```
 
 ### Route Parameters
+
 | Name | Description | Type | Example |
 | ----------- | ----------- | ----------- | ----------- |
 | competencyId | The ObjectId of the competency for the actor | ObjectId as string | 507f1f77bcf86cd799439011 |
