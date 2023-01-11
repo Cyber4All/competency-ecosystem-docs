@@ -21,6 +21,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
 }
 ```
 ### Route Parameters 
+
 | Name | Description | Type | Example |
 | ----------- | ----------- | ----------- | ----------- |
 | competencyId | The ObjectId of the competency the condition belongs to | ObjectId as a string | 6112745b84804cf5833aa94c |
