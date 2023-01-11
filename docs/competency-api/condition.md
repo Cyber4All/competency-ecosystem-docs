@@ -20,6 +20,10 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
     Authorization: Bearer Example.bearer.token
 }
 ```
+### Route Parameters 
+| Name | Description | Type | Example |
+| ----------- | ----------- | ----------- | ----------- |
+| competencyId | The ObjectId of the competency the condition belongs to | ObjectId as a string | 6112745b84804cf5833aa94c |
 
 ### Body Parameters
 
@@ -35,7 +39,8 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
 | Code | Description |
 | ----------- | ----------- |
 | 204 | Condition updated successfully |
-| 400 | - Competency is deprecated, rejected, or published and cannot be updated. - Body is incorrectly formatted. |
+| 400 | Competency is deprecated, rejected, or published and cannot be updated. |
+| 400 | Body is incorrectly formatted. |
 | 401 | Not Authenticated |
 | 403 | User does not have permissions to update fields of the competency |
 | 404 | Competency or work_role not found |
@@ -45,7 +50,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/condi
 ```
 curl -X PATCH \
   -H "Content-Type: application/json" \
-  -H "Authorization": Bearer Example.bearer.token \
-  -d '{ "work_role": "6112745b84804cf5833aa94c", "tech": [ "SEED Labs", "Hack the Box"], "limitations": without the use of the internet, "competencyId" : "6112745b84804cf5833aa94c", "userId" : "6112745b84804cf5833aa94c" }' \
+  -H "Authorization": "Bearer Example.bearer.token" \
+  -d '{ "work_role": "6112745b84804cf5833aa94c", "tech": [ "SEED Labs", "Hack the Box"], "limitations": without the use of the internet, "competencyId" : "6112745b84804cf5833aa94c" }' \
   -L "https://api.competency-constructor.clark.center/competencies/:competencyId/condition"
   ```
