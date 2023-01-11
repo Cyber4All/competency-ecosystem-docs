@@ -29,14 +29,14 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/actor
 
 | Name | Description | Type | Example |
 | ----------- | ----------- | ----------- | ----------- |
-| type | The type of audience for the competency | string | The undergraduate student |
-| details | Any details necessary about the audience of the competency | string | who has completed basic networking |
+| type | The type of actor for the competency | string | The undergraduate student |
+| details | Any details necessary about the actor of the competency | string | who has completed basic networking |
 
 ### Responses
 
 | Code | Description |
 | ----------- | ----------- |
-| 204 | Audience updated successfully |
+| 204 | Actor updated successfully |
 | 400 | Competency is deprecated, rejected, or published and cannot be updated. |
 | 400 | Body is incorrectly formatted. |
 | 401 | Not Authenticated  |
