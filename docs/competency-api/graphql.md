@@ -14,7 +14,7 @@ parent: Competency API
 ## Introduction
 The Competency API uses GraphQL to query and retrieve data. [GraphQL](graphql.org) is a query language for APIs that gives clients control over what data is asked for.
 
-To utilize GraphQL in our API, send a GET request to the [GraphQL route](#definition) with a query document attached to the body. The query document tells the API what data should be returned. The data that is returned is read-only, and cannot be used to manipulate data in the server.
+To utilize GraphQL in our API, send a POST request to the [GraphQL route](#definition) with a query document attached to the body. The query document tells the API what data should be returned. The data that is returned is read-only, and cannot be used to manipulate data in the server.
 
 Example query document to retrieve a competency by its id with it's details:
 
@@ -25,7 +25,7 @@ query {
         status,                                     # a field that returns a scalar
         authorId,                                   # a field that returns a scalar
         version,                                    # a field that returns a scalar
-        audience {                                  # a field that returns an object
+        actor {                                  # a field that returns an object
           type                                      # a field that returns a scalar
           details                                   # a field that returns a scalar
         }
@@ -68,7 +68,7 @@ Searches for an individual competency.
         status
         authorId
         version
-        audience {
+        actor {
           _id
           type
           details
@@ -360,7 +360,7 @@ Property Name: competency
 | status        | string                                  |
 | authorId      | string                                  |
 | version       | int                                     |
-| audience      | [audienceType](#audiencetype)           |
+| actor         | [actorType](#actortype)                 |
 | behavior      | [behaviorType](#behaviortype)           |
 | condition     | [conditionType](#conditiontype)         |
 | degree        | [degreeType](#degreetype)               |
@@ -402,9 +402,9 @@ Property Name: NiceElement
 | element_id  | string     |
 | description | string     |
 
-### audienceType
+### actorType
 
-Property Name: audience
+Property Name: actor
 
 | Field Name | Field Type |
 |------------|------------|
