@@ -95,7 +95,6 @@ Searches for an individual competency.
 | 403  | User not authorized to view competency              |
 | 403  | JWT or API Key missing or invalid                   |
 | 404  | Competency not found                                |
-| 500  | Authorization server error                          |
 
 ---
 
@@ -144,7 +143,6 @@ Searches for competencies based on a filter provided by the arguments.
 | 400  | Error parsing graph query              |
 | 401  | User has invalid permissions           |
 | 403  | User not authorized to view competency |
-| 500  | Authorization server error             |
 
 ---
 ### workrole
