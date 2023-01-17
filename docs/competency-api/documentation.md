@@ -68,8 +68,10 @@ curl -X PATCH \
 
 | Name | Description |
 |:----:|----|
-| 201(create) 204(update) | Success |
-| 400 | Competency is deprecated, rejected, or published and cannot be updated. Or body is incorrectly formatted. |
+| 201 | Successful create |
+| 204 | Successful update |
+| 400 | Competency is deprecated, rejected, or published and cannot be updated. |
+| 400 | Body is incorrectly formatted. |
 | 401 | Not Authenticated  |
 | 403 | User does not have permissions to update fields of the competency |
 | 404 | Competency not found |
@@ -108,12 +110,29 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/docum
 https://api.competency-constructor.clark.center/competencies/:competencyId/documentation?ids=:documentationId,:documentationId,:documentationId
 ```
 
+<details closed markdown="block">
+  <summary>
+    Example
+  </summary>
+
+### Example Curl request
+
+```bash
+curl -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Authorization": "Bearer Example.bearer.token" \
+  -L "https://api.competency-constructor.clark.center/competencies/6112745b84804cf5833aa94c/documentation?ids=6112745b84804cf5833aa94c,6112745b84804cf5833aa94c"
+```
+
+</details>
+
 ### Response
 
 | Name | Description |
 |:----:|----|
 | 201 | Documentation Successfully deleted |
-| 400 | Competency is deprecated, rejected, or published and cannot be updated. Or body is incorrectly formatted. |
+| 400 | Competency is deprecated, submitted, or published and cannot be updated. |
+| 400 | Body is incorrectly formatted. |
 | 401 | Not Authenticated  |
 | 403 | User does not have permissions to update fields of the competency |
-| 404 | Competency or Documentation not found |
+| 404 | Competency, Condition, or Documentation not found |
