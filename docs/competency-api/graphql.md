@@ -42,12 +42,14 @@ https://api.competency-contructor.clark.center/graphql
 ```
 
 ## Headers
-If you are querying the API for competencies not open to the public, a valid authorization header is required. Querying for public competencies, workroles, tasks, knowledge, and skills does not require authorization.
 ```json
 {
   "Authorization": "Bearer Example.bearer.token"
 }
 ```
+
+{: .note}
+Authorization is not required for public competencies, workroles, tasks, knowledge units and skills.
 
 ## Queries
 
