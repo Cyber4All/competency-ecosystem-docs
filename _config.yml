@@ -3,4 +3,15 @@ remote_theme: just-the-docs/just-the-docs
 
 # uncomment below for local development, don't forget to re-comment it out
 # when you push ur PR or you will feel like a silly billy
-# theme: just-the-docs
+theme: just-the-docs
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: purple
+  important:
+    title: Important
+    color: blue
