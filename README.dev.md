@@ -28,7 +28,7 @@ echo "chruby ruby-3.1.3" >> ~/.zshrc
 ```
 after this you can exit out and open a new terminal or type:
 ```bash 
-source .zshrc
+source ~/.zshrc
 ```
 then
 ```bash
@@ -48,6 +48,11 @@ gem install jekyll bundler
 ```
 
 Gem is ruby's package manager, like Pip is to Python, or npm is to Node.
+
+Then install the gems for this project by running:
+```bash
+bundle install
+```
 
 #### Step 3: Run it
 
