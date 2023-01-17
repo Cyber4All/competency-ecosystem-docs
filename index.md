@@ -20,7 +20,7 @@ The Competency Ecosystem was designed to support the development of the Competen
 The Competency Constructor API provides users with a programmatic way to access competencies built using our structure. You can use the API to build custom integrations with our competency data model or retrieve released and deprecated competencies.
  
 {: .note }
-We’ve designed the Competency Constructor API to utilize standard REST verbs and return competency resources in JSON format.
+We’ve designed the Competency Constructor API to utilize both REST and GRAPHQL. Both standards are used to return competency resources in JSON format.
 
 
 # Feedback
