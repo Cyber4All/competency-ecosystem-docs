@@ -16,7 +16,7 @@ Authentication and Authorization are done with two different methods:
 2. API Keys
 
 ## Bearer Tokens
-Bearer tokens are Json Web Tokens (JWTs) that are generated when you [login](#login) or [register](#register). Here is an example of what a JWT look like: 
+Bearer tokens are Json Web Tokens (JWTs) that are generated when you [login](#login) or [register](#register). Here is an example of what a JWT looks like: 
 ```
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
