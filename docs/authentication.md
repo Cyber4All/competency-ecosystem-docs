@@ -38,7 +38,7 @@ API Keys are made up of two parts: a prefix and hmac. The format of the key is a
 API Keys are identifiable by prefix. API Keys are salted and hashed when stored in our database. Which means if you lose your key, ***we cannot recover it***.
 
 {: .warning}
-> **API KEYS ARE NOT RECOVERABLE, IF LOST AN API KEY CANNOT BE RECOVERED. IT WILL HAVE TO BE DELETED AND A NEW ONE GENERATED**
+> **API KEYS ARE NOT RECOVERABLE, IF LOST AN API KEY CANNOT BE RECOVERED. IT WILL HAVE TO BE DELETED AND A NEW ONE GENERATED.**
 
 All users have a list of actions that they can perform on our API. The API Key will have a subset of **your** actions. This mean that if permissions A-Z exists, and **your account** has permissions A-D, then your API Key **can only** have permissions A-D, or a subset of these permissions (e.g. { A, B, D}).
 
