@@ -6,7 +6,7 @@ search_exclude: true
 
 ## Step 1: Install and use the correct version of ruby
 
-#### Install dependancies
+#### Install dependencies
 
 ```bash
 brew install chruby ruby-install xz
@@ -19,7 +19,7 @@ ruby-install ruby-3.1.3
 
 This will take a few minutes but afterwards you should configure zsh to use this version instead of the default
 
-#### Configure your teminal to use the correct version by default
+#### Configure your terminal to use the correct version by default
 
 ```bash
 echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
