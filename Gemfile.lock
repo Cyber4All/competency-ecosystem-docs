@@ -36,10 +36,10 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    just-the-docs (0.3.3)
+    just-the-docs (0.4.0.rc3)
       jekyll (>= 3.8.5)
-      jekyll-seo-tag (~> 2.0)
-      rake (>= 12.3.1, < 13.1.0)
+      jekyll-seo-tag (>= 2.0)
+      rake (>= 12.3.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -57,7 +57,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (4.0.0)
+    rouge (3.30.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -67,11 +67,13 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  arm64-darwin-21
   arm64-darwin-22
+  x86_64-darwin-21
 
 DEPENDENCIES
   jekyll
-  just-the-docs
+  just-the-docs (= 0.4.0.rc3)
 
 BUNDLED WITH
-   2.3.26
+   2.3.7
