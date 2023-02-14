@@ -302,6 +302,40 @@ No arguments are taken for this query.
 | 404  | Knowledge and skill elements not found        |
 
 ---
+### dropdownItems
+Gets a list of all dropdown items that can be used to populate certain areas of a competency
+
+<details markdown="block">
+  <summary>Example Schema</summary>
+
+  ```graphql
+    query {
+        dropdownItem {
+          _id,
+          type,
+          detail
+        }
+    }
+  ```
+</details>
+
+#### Arguments
+
+| Name    | Type                        | Required? | Description                                                      |
+|---------|-----------------------------|-----------|------------------------------------------------------------------|
+| type    | [DropdownTypeEnum](#dropdowntypeenum)     | false     | Allows for filtering specific types of a dropdown  |
+
+
+#### Responses
+
+| Name | Description                            |
+|------|----------------------------------------|
+| 200  | Success                                |
+| 400  | Invalid DropdownType                   |
+| 400  | Error parsing graph query              |
+| 401  | User has invalid permissions           |
+
+---
 
 ## Types
 
@@ -488,3 +522,10 @@ While the `LifecyclesEnumType` is not an object type like all the types listed a
 | DEPRECATED | "deprecated" |
 | REJECTED   | "rejected"   |
 | PUBLISHED  | "published"  |
+
+### DropdownTypeEnum
+
+| Constant   | String Value |
+|------------|--------------|
+| ACTOR      | "actor"      |
+| TIME       | "time"       |
