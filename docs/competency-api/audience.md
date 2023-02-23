@@ -30,7 +30,7 @@ https://api.competency-constructor.clark.center/competencies/:competencyId/actor
 
 | Name | Description | Type | Example |
 | ----------- | ----------- | ----------- | ----------- |
-| type | The type of actor for the competency | string | The undergraduate student |
+| type | The type of actor for the competency | object id of dropdown | 70f1f217bcf86cd799421011 |
 | details | Any details necessary about the actor of the competency | string | who has completed basic networking |
 
 ### Responses
