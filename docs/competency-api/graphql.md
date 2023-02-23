@@ -135,6 +135,8 @@ Searches for competencies based on a filter provided by the arguments.
 | author  | string                      | false     | The author of the competencies being searched for                |
 | status  | An array of [Lifecycle Enums](#lifecyclesenumtype) | false     | The lifecycles of competencies being searched for                |
 | version | An array of integers        | false     | The version of competencies being searched for                   |
+| workrole | object id string           | false     | The workrole id to filter for                                    |
+| task    | object id string            | false     | The task id to filter for                                        |
 
 #### Responses
 
@@ -392,10 +394,34 @@ Property Name: workrole
 | ksats        | List(string) |
 | description  | string       |
 | special_area | string       |
+| tasks        | List([nestedElementType](#nestedelementtype)) |
 
 ### niceElementType
 
 Property Name: NiceElement
+
+| Field Name  | Field Type |
+|-------------|------------|
+| _id         | string     |
+| element     | string     |
+| element_id  | string     |
+| description | string     |
+| work_roles  | List([nestedWorkRoleType](#nestedworkroletype)) |
+
+### nestedWorkRoleType
+
+Property Name: nestedWorkRole
+
+| Field Name | Field Type |
+|------------|------------|
+| _id        | string     |
+| work_role  | string     |
+| work_role_id | string   |
+| description | string    |
+| special_area | string   |
+
+### nestedElementType
+Property Name: nestedElement
 
 | Field Name  | Field Type |
 |-------------|------------|
