@@ -10,7 +10,7 @@ parent: Competency API
 ## Deprecate Competency
 
 ```http
-PATCH https://api.competency-constructor.clark.center/competencies/:competencyId/deprecate
+PATCH https://api.competency-constructor.clark.center/lifecycle/:competencyId/deprecate
 ```
 
 ### Description
@@ -34,7 +34,7 @@ User must have the following actions [`competency:lifecycle:deprecate`]
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer REPLACE_BEARER_TOKEN" \
-  -L "https://api.competency-constructor.clark.center/competencies/:competencyId/deprecate"
+  -L "https://api.competency-constructor.clark.center/lifecycle/:competencyId/deprecate"
 ```
 </details>
 
@@ -50,7 +50,7 @@ curl -X PATCH \
 ## Publish Competency
 
 ```http
-PATCH https://api.competency-constructor.clark.center/competencies/:competencyId/publish
+PATCH https://api.competency-constructor.clark.center/lifecycle/:competencyId/publish
 ```
 
 ### Description
@@ -74,7 +74,7 @@ User must have the following actions [`competency:lifecycle:approve`]
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer REPLACE_BEARER_TOKEN" \
-  -L "https://api.competency-constructor.clark.center/competencies/:competencyId/publish"
+  -L "https://api.competency-constructor.clark.center/lifecycle/:competencyId/publish"
 ```
 </details>
 
@@ -90,7 +90,7 @@ curl -X PATCH \
 ## Reject Competency
 
 ```http
-PATCH https://api.competency-constructor.clark.center/competencies/:competencyId/reject
+PATCH https://api.competency-constructor.clark.center/lifecycle/:competencyId/reject
 ```
 
 ### Description
@@ -114,7 +114,7 @@ User must have the following actions [`competency:lifecycle:reject`]
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer REPLACE_BEARER_TOKEN" \
-  -L "https://api.competency-constructor.clark.center/competencies/:competencyId/reject"
+  -L "https://api.competency-constructor.clark.center/lifecycle/:competencyId/reject"
 ```
 </details>
 
@@ -130,7 +130,7 @@ curl -X PATCH \
 ## Submit Competency
 
 ```http
-PATCH https://api.competency-constructor.clark.center/competencies/:competencyId/submit
+PATCH https://api.competency-constructor.clark.center/lifecycle/:competencyId/submit
 ```
 
 ### Description
@@ -154,7 +154,7 @@ User must have the following actions [`competency:lifecycle:submit`]
 curl -X PATCH \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer REPLACE_BEARER_TOKEN" \
-  -L "https://api.competency-constructor.clark.center/competencies/:competencyId/submit"
+  -L "https://api.competency-constructor.clark.center/lifecycle/:competencyId/submit"
 ```
 </details>
 
